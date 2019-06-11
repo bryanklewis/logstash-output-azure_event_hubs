@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     "logstash_plugin" => "true",
     "logstash_group" => "output",
     "source_code_uri" => "https://github.com/bryanklewis/logstash-output-azure_event_hubs",
-    "allowed_push_host" => "rubygems.org"
+    "allowed_push_host" => "https://rubygems.org"
   }
 
   # Gem dependencies
