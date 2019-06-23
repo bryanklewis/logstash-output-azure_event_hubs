@@ -55,9 +55,10 @@ output {
 - Java 11 JDK
 - Logstash version 7+. 
 - Azure Event Hubs namespace, hub, and credential to test against.
-- [Gradle](https://gradle.org/install/) is used to download the .jar dependencies and generate the classpath file by running:
+- [Gradle](https://gradle.org/install/) is used to download the .jar dependencies and generate the classpath file.
 
 1. Install Dependencies
+
 ```shell
 rake vendor
 bundle install
@@ -69,6 +70,7 @@ bundle install
 ```
 
 2. Running your unpublished Plugin in Logstash
+
 Run in a local Logstash clone. Edit the Logstash Gemfile and add the local plugin path at the top of the Gemfile, for example:
 ```
 gem 'logstash-output-azure_event_hubs', :path => '/path/to/logstash-output-azure_event_hubs'
