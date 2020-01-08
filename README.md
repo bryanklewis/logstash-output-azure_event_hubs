@@ -6,7 +6,7 @@ This plugin enables you to send events from Elastic Logstash to an Azure [Event 
 
 ## Requirements
 
-- Java 8 or 11 JDK. Recommend the [Azul Zulu](https://www.azul.com/downloads/zulu-community/) OpenJDK builds.
+- Java 8 or 11 JDK/JRE. Recommend the [Azul Zulu](https://www.azul.com/downloads/zulu-community/) OpenJDK builds.
 - Logstash version 7+. [Installation instructions](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html) 
 - Azure Event Hubs namespace and hub.
   - Read [Create an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) for more information.
@@ -53,7 +53,7 @@ output {
 ## Development
 
 - Jruby 9.2.6.0+
-- Java 11 JDK
+- Java 8/11 JDK
 - Logstash version 7+. 
 - Azure Event Hubs namespace, hub, and credential to test against.
 - [Gradle](https://gradle.org/install/) is used to download the .jar dependencies and generate the classpath file.
