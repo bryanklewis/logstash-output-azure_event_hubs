@@ -36,3 +36,4 @@ tmp
 .gradle
 build
 vendor
+gradle.properties
