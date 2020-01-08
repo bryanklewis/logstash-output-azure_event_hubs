@@ -1,11 +1,12 @@
 # Logstash Output Plugin for Azure Event Hubs
+[![Gem Version](https://badge.fury.io/rb/logstash-output-azure_event_hubs.svg)](https://badge.fury.io/rb/logstash-output-azure_event_hubs)
 
 This is a plugin for [Logstash](https://github.com/elastic/logstash). It is fully free and open source. The license is Apache 2.0.
 This plugin enables you to send events from Elastic Logstash to an Azure [Event Hubs](https://azure.microsoft.com/en-us/services/event-hubs/) entity. The Azure Event Hubs [Java SDK](https://docs.microsoft.com/en-us/java/api/com.microsoft.azure.eventhubs.eventhubclient.sendsync?view=azure-java-stable) is used to send events via synchronous class methods over AMQP.
 
 ## Requirements
 
-- Java 11 JDK or JRE. Recommend the [Azul Zulu](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html) OpenJDK builds.
+- Java 8 or 11 JDK. Recommend the [Azul Zulu](https://www.azul.com/downloads/zulu-community/) OpenJDK builds.
 - Logstash version 7+. [Installation instructions](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html) 
 - Azure Event Hubs namespace and hub.
   - Read [Create an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) for more information.
