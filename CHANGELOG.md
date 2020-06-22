@@ -13,6 +13,12 @@ Example:
 ### Security
 ```
 
+## \[0.2.0\]  2020-06-21
+### Fixed
+- Update national cloud config bug
+### Changed
+- service_uri --> service_domain
+
 ## \[0.1.1\]  2020-01-07
 ### Added
 - Include .jar dependencies in gem

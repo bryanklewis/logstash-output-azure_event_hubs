@@ -41,8 +41,8 @@ output {
 
 | Parameter Name | Description | Notes |
 | --- | --- | --- |
-| service_namespace | Azure Service Namespace or Endpoint. | Required.
-| service_uri | Use a national Azure Cloud. | 
+| service_namespace | Azure Service Namespace or Endpoint. | Required. Exclude domain name.
+| service_domain | Use a national Azure Cloud. | Options: "servicebus.usgovcloudapi.net", "servicebus.cloudapi.de", "servicebus.chinacloudapi.cn" 
 | event_hub | Azure Event Hub (Entity) Path. | Required
 | sas_key_name | Azure Shared Access Signature (SAS) Key Name. | Required
 | sas_key | Azure Shared Access Signature (SAS) Key. | Required

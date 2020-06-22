@@ -42,9 +42,9 @@ class LogStash::Outputs::AzureEventHubs < LogStash::Outputs::Base
   # Azure Service Namespace or Endpoint
   config :service_namespace, :validate => :string, :required => true, :default => nil
 
-  # Azure Service URI
+  # Azure Service Domain
   # Use a national Azure Cloud
-  config :service_uri, :validate => :string, :required => false, :default => nil
+  config :service_domain, :validate => :string, :required => false, :default => nil
 
   # Azure Event Hub (Entity) Path
   config :event_hub, :validate => :string, :required => true, :default => nil
@@ -83,9 +83,9 @@ class LogStash::Outputs::AzureEventHubs < LogStash::Outputs::Base
     connection_builder.setSasKeyName(@sas_key_name)
     connection_builder.setSasKey(@sas_key)
 
-    # Configure for national cloud uri
-    if (!@service_uri.nil?)
-      connection_builder.setEndpoint(@service_uri)
+    # Configure for national cloud
+    if (!@service_domain.nil?)
+      connection_builder.setEndpoint(@service_namespace, @service_domain)
     end
 
     # The Executor handles all the asynchronous tasks and this is passed to the EventHubClient.
